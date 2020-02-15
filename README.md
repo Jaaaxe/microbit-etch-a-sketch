@@ -19,9 +19,11 @@ The knobs create lineographic images.
 ## How does the game work on the microbit?
 The microbit has a 5x5 led display which allows users to move a *pixel* using\
 the button A for horizontal movement and button B for vertical movement.\
-You can then set the pixel using the button combination of A+B. It allows\
-the user to create pixel art and find out clever new ways in which they can\
-create objects within the constraints of the 5x5 array of leds.
+You can then set the pixel by touching the contacts P0 and GND together.\
+Moving to a set led and pressing touching the contacts P0 and GND will switch
+the selected led off in case you want to change the drawing or turned on a\
+wrong led. The program allows the user to create pixel art and find out clever\
+new ways in which they can create objects within the constraints of the 5x5 array of leds.
 
 ![](https://gitlab.uwe.ac.uk/m2-yasmeen/iot-challenge-1/raw/master/Img/giphy.gif)
 
@@ -29,12 +31,12 @@ create objects within the constraints of the 5x5 array of leds.
 
 **Button A**: Control the current pixel vertically. Press to move the pixel by one space.\
 **Button B**: Control the current pixel horizontally. Press to move the pixel by one space.\
-**Button A+B**: Set the pixel at its current position. A collection of *set pixels*\
-                make up your pixel art.\
-**Button Reset**: Clear your board using the reset button the back
+**P0 Contact**: Touching the P0 contact with GND sets the pixel at its current position.\
+A collection of *set pixels* make up your pixel art.\
+**P2 Contact**: Touching the P2 contact with GND clears your board.
 
 ## Warnings
-Pressing the A+B input on the microbit isn't always registered due to how\
-quickly the buttons need to be pressed. But art takes patience ;).
+Touching the P0 / P2 contact input on the microbit isn't always registered due to how\
+you might not always get proper contact. But art takes patience ;).
 
 # Have Fun!
