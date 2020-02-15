@@ -120,6 +120,7 @@ void ClearLedArray() {
 int main() {
     // Set the display to greyscale mode so as to have a different cursor brightness
     uBit.display.setDisplayMode(DISPLAY_MODE_GREYSCALE); 
+    uBit.display.scroll("LETS DRAW!");
     uBit.init(); // initialize the MicroBit Object
     while (true) { // Infinite loop of "drawing"
         if (uBit.io.P0.isTouched()) { // if the P0 sensor is touched, set pixel on current led
