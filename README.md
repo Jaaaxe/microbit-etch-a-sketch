@@ -39,4 +39,5 @@ A collection of *set pixels* make up your pixel art.\
 Touching the P0 / P2 contact input on the microbit isn't always registered due to how\
 you might not always get proper contact. But art takes patience ;).
 
+![](https://gitlab.uwe.ac.uk/m2-yasmeen/iot-challenge-1/raw/master/Img/pixart.png)
 # Have Fun!
