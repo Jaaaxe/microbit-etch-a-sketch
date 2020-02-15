@@ -27,8 +27,8 @@ the 5x5 array of leds.
 
 ## Controls
 
-**Button A**: Control the current pixel vertically. Press to move the pixel by one space.
-**Button B**: Control the current pixel horizontally. Press to move the pixel by one space.
+**Button A**: Control the current pixel vertically. Press to move the pixel by one space.\
+**Button B**: Control the current pixel horizontally. Press to move the pixel by one space.\
 **Button A+B**: Set the pixel at its current position. A collection of *set pixels*\
-                make up your pixel art.
+                make up your pixel art.\
 **Button Reset**: Clear your board using the reset button the back
