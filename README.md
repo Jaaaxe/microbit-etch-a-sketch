@@ -32,3 +32,9 @@ the 5x5 array of leds.
 **Button A+B**: Set the pixel at its current position. A collection of *set pixels*\
                 make up your pixel art.\
 **Button Reset**: Clear your board using the reset button the back
+
+## Warnings
+Pressing the A+B input on the microbit isn't always registered due to how\
+quickly the buttons need to be pressed. But art takes patience ;).
+
+# Have Fun!
