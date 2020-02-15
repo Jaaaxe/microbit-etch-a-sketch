@@ -1,7 +1,7 @@
 # Internet of Things - Challenge One
 
 **Author**: Mariyam Yasmeen\
-**Student ID**: S1800367 \ 
+**Student ID**: S1800367   
 **Batch**: BSc (Hons) Computer Science Jan 2019\
 **Project Name**: Microbit Etch A Sketch\
 **Created Date**: February 2020\
