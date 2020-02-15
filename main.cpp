@@ -142,7 +142,7 @@ int main() {
         }
         
         
-        uBit.sleep(150); // sleep for 150 seconds so that our buttons doesnt overshoot when moved
+        uBit.sleep(150); // sleep for 150 seconds so that the buttons doesnt overshoot when moved
         UpdateScreen(); // update the screen
     }
 }
