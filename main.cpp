@@ -123,7 +123,7 @@ int main() {
     uBit.display.scroll("LETS DRAW!");
     uBit.display.clear();
     while (true) { // Infinite loop
-        if (uBit.buttonAB.isPressed()) { // if the P0 sensor is touched, draw on current led
+        if (uBit.buttonAB.isPressed()) { // if the AB sensor is touched, draw on current led
             ToggleLed(cursor_x, cursor_y);
         } else if (uBit.buttonB.isPressed()) { // if the B button is pressed, move horizontally
             if (cursor_x < 4){
@@ -137,9 +137,7 @@ int main() {
             } else {
                 cursor_y = 0;
             }
-        } else if (uBit.io.P2.isTouched()) { // if the P2 sensor is touched, clear the led array
-            ClearLedArray(); // clear the array
-        }
+        } 
         
         uBit.sleep(150); // sleep for 150 seconds so that our buttons doesnt overshoot the current position
         UpdateScreen(); // Call the update screen
