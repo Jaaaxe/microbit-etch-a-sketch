@@ -20,7 +20,7 @@ The knobs create lineographic images.
 The microbit has a 5x5 led display which allows users to move a *pixel* using\
 the button A for horizontal movement and button B for vertical movement.\
 You can then set the pixel by touching the contacts P0 and GND together.\
-Moving to a set led and pressing touching the contacts P0 and GND will switch
+Moving to a set led and pressing touching the contacts P0 and GND will switch\
 the selected led off in case you want to change the drawing or turned on a\
 wrong led. The program allows the user to create pixel art and find out clever\
 new ways in which they can create objects within the constraints of the 5x5 array of leds.
