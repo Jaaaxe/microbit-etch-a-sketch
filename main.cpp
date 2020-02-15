@@ -113,33 +113,35 @@ void ClearLedArray() {
 //                MAIN FUNCTION            //
 //Description: Displays welcome message.   //
 //Is.. main.                               //
-//Returns: Int                             //
+//Returns: Int - but not really            //
 //Parameters: N/A                          //
 /////////////////////////////////////////////
 
 int main() {
-    uBit.display.setDisplayMode(DISPLAY_MODE_GREYSCALE); // Set the display to greyscale mode
-    uBit.init(); // initilize the MicrBit Obejct
-    uBit.display.scroll("LETS DRAW!");
-    uBit.display.clear();
-    while (true) { // Infinite loop
-        if (uBit.buttonAB.isPressed()) { // if the AB sensor is touched, draw on current led
+    // Set the display to greyscale mode so as to have a different cursor brightness
+    uBit.display.setDisplayMode(DISPLAY_MODE_GREYSCALE); 
+    uBit.init(); // initialize the MicroBit Object
+    while (true) { // Infinite loop of "drawing"
+        if (uBit.io.P0.isTouched()) { // if the P0 sensor is touched, set pixel on current led
             ToggleLed(cursor_x, cursor_y);
-        } else if (uBit.buttonB.isPressed()) { // if the B button is pressed, move horizontally
+        } else if (uBit.buttonB.isPressed()) { // if the B button is pressed, move horizontally by one space
             if (cursor_x < 4){
                 cursor_x++;
             } else {
                 cursor_x = 0;
             }
-        } else if (uBit.buttonA.isPressed()) { // if the A button is pressed move vertically
+        } else if (uBit.buttonA.isPressed()) { // if the A button is pressed, move vertically by one space
             if (cursor_y < 4){
                 cursor_y++;
             } else {
                 cursor_y = 0;
             }
-        } 
+        } else if (uBit.io.P2.isTouched()) { // if the P2 sensor is touched, reset the board
+            ClearLedArray(); // clear the leds
+        }
         
-        uBit.sleep(150); // sleep for 150 seconds so that our buttons doesnt overshoot the current position
-        UpdateScreen(); // Call the update screen
+        
+        uBit.sleep(150); // sleep for 150 seconds so that our buttons doesnt overshoot when moved
+        UpdateScreen(); // update the screen
     }
 }
