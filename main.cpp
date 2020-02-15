@@ -141,7 +141,7 @@ int main() {
             ClearLedArray(); // clear the array
         }
         
-        uBit.sleep(200); // sleep for 150 seconds so that our buttons doesnt overshoot the current position
+        uBit.sleep(150); // sleep for 150 seconds so that our buttons doesnt overshoot the current position
         UpdateScreen(); // Call the update screen
     }
 }
