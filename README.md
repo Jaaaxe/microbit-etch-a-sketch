@@ -1,7 +1,7 @@
 # Internet of Things - Challenge One
 
 **Author**: Mariyam Yasmeen\
-**Student ID**: S1800367\ 
+**Student ID**: S1800367 \ 
 **Batch**: BSc (Hons) Computer Science Jan 2019\
 **Project Name**: Microbit Etch A Sketch\
 **Created Date**: February 2020\
@@ -23,7 +23,7 @@ the button combination of A+B. It allows the user to get creative a draw pixel\
 art and find out clever new ways in which they can create objects using only\
 the 5x5 array of leds.
 
-![](https://gitlab.uwe.ac.uk/m2-yasmeen/iot-challenge-1/blob/master/Img/br.jpg)
+![](https://gitlab.uwe.ac.uk/m2-yasmeen/iot-challenge-1/raw/master/Img/br.jpg)
 
 ## Controls
 
