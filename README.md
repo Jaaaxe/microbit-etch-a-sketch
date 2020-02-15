@@ -18,10 +18,10 @@ The knobs create lineographic images.
 
 ## How does the game work on the microbit?
 The microbit has a 5x5 led display which allows users to move a *pixel* using\
-the buttons A and B horizontally and vertically and then set the pixel using\
-the button combination of A+B. It allows the user to get creative a draw pixel\
-art and find out clever new ways in which they can create objects using only\
-the 5x5 array of leds.
+the button A for horizontal movement and button B for vertical movement.\
+You can then set the pixel using the button combination of A+B. It allows\
+the user to create pixel art and find out clever new ways in which they can\
+create objects within the constraints of the 5x5 array of leds.
 
 ![](https://gitlab.uwe.ac.uk/m2-yasmeen/iot-challenge-1/raw/master/Img/giphy.gif)
 
