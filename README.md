@@ -16,6 +16,30 @@ of the frame in the lower corners. Twisting the knobs moves a stylus that\
 displaces aluminum powder on the back of the screen, leaving a solid line. \
 The knobs create lineographic images.
 
+## What do you need?
+* A microbit
+* Micro USB cable to transfer the game
+
+## How do we install the game?
+There are two ways you can setup your microbit to use the etch a sketch
+### Downloading hex code
+1. Download the .hex file located <a href="https://gitlab.uwe.ac.uk/m2-yasmeen/iot-challenge-1/raw/master/Etchasketch.NRF51_MICROBIT.hex?inline=false">here</a>
+2. Connect your microbit to your computer.
+3. Drag and drop the file into your microbit.
+4. Start drawing!
+
+### Compiling the source code
+You can also make your own changes to the game and compile it yourself!
+1. Head on over to ide.mbed.com
+2. Create an account and sign in
+3. Create a new empty program
+4. Head to import and search for "microbit"
+5. Import the library that has the tags: dal, lancaster, microbit
+6. Create a new file called main.cpp and copy paste the code from the main in this repo
+7. Make the changes that you would like and click compile
+8. Drag and drop the file into your microbit.
+9. Start drawing!
+
 ## How does the game work on the microbit?
 The microbit has a 5x5 led display which allows users to move a *pixel* using\
 the button A for horizontal movement and button B for vertical movement.\
