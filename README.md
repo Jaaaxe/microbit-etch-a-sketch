@@ -63,5 +63,22 @@ A collection of *set pixels* make up your pixel art.\
 Touching the P0 / P2 contact input on the microbit isn't always registered due to how\
 you might not always get proper contact. But art takes patience ;)
 
+## Troubleshooting
+If you are unable to play the game try one of the following fixes:
+
+### Game does not load
+Try to compile the hex or download the file and try again OR reset the microbit.\
+You can find the reset button located on the back.
+
+### Microbit is not detected on your computer
+Try using a different micro USD cable or connect it to a different computer.\
+
+### Microbit won't power on
+Check to see if your micro USD cable works or if the batteries in the external\
+power pack need to be replaced.
+
+### I have another issue 
+Please mail me your enquiry at mariyam2.yasmeen@live.uwe.ac.uk
+
 ![](https://gitlab.uwe.ac.uk/m2-yasmeen/iot-challenge-1/raw/master/Img/pixart.png)
 # Have Fun!
