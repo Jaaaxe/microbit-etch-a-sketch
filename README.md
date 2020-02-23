@@ -23,7 +23,7 @@ The knobs create lineographic images.
 ## How do we install the game?
 There are two ways you can setup your microbit to use the etch a sketch
 ### Downloading hex code
-1. Download the .hex file located <a href="https://gitlab.uwe.ac.uk/m2-yasmeen/iot-challenge-1/raw/master/Etchasketch.NRF51_MICROBIT.hex?inline=false">here</a>
+1. Download the .hex file located <a href="https://gitlab.uwe.ac.uk/m2-yasmeen/iot-challenge-1/raw/master/Etchasketch.NRF51_MICROBIT.hex?inline=false">here</a> (make sure the extension is .hex)
 2. Connect your microbit to your computer.
 3. Drag and drop the file into your microbit.
 4. Start drawing!
