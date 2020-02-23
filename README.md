@@ -1,4 +1,4 @@
-# Internet of Things - Challenge One
+# Internet of Things - Challenge One --Microbit Etch A Sketch
 
 **Author**: Mariyam Yasmeen\
 **Student ID**: S1800367   
@@ -7,7 +7,6 @@
 **Created Date**: February 2020\
 **Description**: Create pixel art using a microbit
 
-# Microbit Etch A Sketch
 
 ## What is an Etch A Sketch?
 An Etch A Sketch is a toy invented in the 1960s. An Etch A Sketch has a thick,\
@@ -21,7 +20,7 @@ The knobs create lineographic images.
 * Micro USB cable to transfer the game
 
 ## How do we install the game?
-There are two ways you can setup your microbit to use the etch a sketch
+There are two ways you can setup your microbit to use the Etch A Sketch
 ### Downloading hex code
 1. Download the .hex file located <a href="https://gitlab.uwe.ac.uk/m2-yasmeen/iot-challenge-1/raw/master/Etchasketch.NRF51_MICROBIT.hex?inline=false">here</a> (make sure the extension is .hex)
 2. Connect your microbit to your computer.
