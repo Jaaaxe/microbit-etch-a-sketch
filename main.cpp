@@ -6,7 +6,7 @@
 //Created Date: February 2020              //
 //Description: Microbit - Etch A Sketch    //
 //User Advice: When in use, setting pixels //
-//(A+B) might require multiple attempts    //
+//(P0+GND) might require multiple attempts //
 /////////////////////////////////////////////
 
 #include "MicroBit.h"
@@ -54,9 +54,9 @@ Led LedArray[25] = {
 
 void UpdateScreen() {
     
-    uBit.display.clear(); // clear the display
+    uBit.display.clear(); // Clear the display
     int brightVal = 0;
-    for (int i = 0; i < 25; i++) { // for each led in the LedArray object, draw it
+    for (int i = 0; i < 25; i++) { // For each led in the LedArray object, draw 
         if (LedArray[i].isLit){
             brightVal = 255;
         } else {
@@ -65,13 +65,13 @@ void UpdateScreen() {
         uBit.display.image.setPixelValue(LedArray[i].x, LedArray[i].y, brightVal);   
     }
     
-    if (cursor_isLit) { // if the cursor is supposed to be lit, light it.
+    if (cursor_isLit) { // If the cursor is supposed to be lit, light it.
         uBit.display.image.setPixelValue(cursor_x, cursor_y, 100);
-    } else { // if not, turn it off
+    } else { // If not, turn it off
         uBit.display.image.setPixelValue(cursor_x, cursor_y, 0);
     }
     
-    if (cursor_b_count == 2) { // check if the cursor is ready to toggle
+    if (cursor_b_count == 2) { // Check if the cursor is ready to toggle
         cursor_b_count = 0;
         cursor_isLit = not cursor_isLit;
     } else {
@@ -97,7 +97,7 @@ void ToggleLed(int xin, int yin){
 
 /////////////////////////////////////////////
 //                CLEAR LED                //
-//Description: This will clear the "isLit" //
+//Description: This will clear "isLit"     //
 //attribute of all the leds in LedArray    //
 //Returns: None                            //
 //Parameters: None                         //
@@ -120,29 +120,29 @@ void ClearLedArray() {
 int main() {
     // Set the display to greyscale mode so as to have a different cursor brightness
     uBit.display.setDisplayMode(DISPLAY_MODE_GREYSCALE); 
-    uBit.display.scroll("LETS DRAW!");
-    uBit.init(); // initialize the MicroBit Object
+    uBit.display.scroll("LETS DRAW!"); // Welcome Message
+    uBit.init(); // Initialize the MicroBit Object
     while (true) { // Infinite loop of "drawing"
-        if (uBit.io.P0.isTouched()) { // if the P0 sensor is touched, set pixel on current led
+        if (uBit.io.P0.isTouched()) { // if the P0 + GND contact is touched, set pixel on current led
             ToggleLed(cursor_x, cursor_y);
-        } else if (uBit.buttonB.isPressed()) { // if the B button is pressed, move horizontally by one space
+        } else if (uBit.buttonB.isPressed()) { // if button B is pressed, move horizontally by one space
             if (cursor_x < 4){
                 cursor_x++;
             } else {
                 cursor_x = 0;
             }
-        } else if (uBit.buttonA.isPressed()) { // if the A button is pressed, move vertically by one space
+        } else if (uBit.buttonA.isPressed()) { // if button A is pressed, move vertically by one space
             if (cursor_y < 4){
                 cursor_y++;
             } else {
                 cursor_y = 0;
             }
-        } else if (uBit.io.P2.isTouched()) { // if the P2 sensor is touched, reset the board
+        } else if (uBit.io.P2.isTouched()) { // if the P2 + GND contact is touched, reset the board
             ClearLedArray(); // clear the leds
         }
         
         
-        uBit.sleep(150); // sleep for 150 seconds so that the buttons doesnt overshoot when moved
+        uBit.sleep(150); // sleep for 150 seconds so that the buttons don't overshoot when moved
         UpdateScreen(); // update the screen
     }
 }
