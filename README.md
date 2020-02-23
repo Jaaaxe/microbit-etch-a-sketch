@@ -10,7 +10,7 @@
 # Microbit Etch A Sketch
 
 ## What is an Etch A Sketch?
-An Etch A Sketch is a toy invented in the 1960s An Etch A Sketch has a thick,\
+An Etch A Sketch is a toy invented in the 1960s. An Etch A Sketch has a thick,\
 flat gray screen in a red plastic frame. There are two white knobs on the front\
 of the frame in the lower corners. Twisting the knobs moves a stylus that\
 displaces aluminum powder on the back of the screen, leaving a solid line. \
@@ -61,7 +61,7 @@ A collection of *set pixels* make up your pixel art.\
 
 ## Warnings
 Touching the P0 / P2 contact input on the microbit isn't always registered due to how\
-you might not always get proper contact. But art takes patience ;).
+you might not always get proper contact. But art takes patience ;)
 
 ![](https://gitlab.uwe.ac.uk/m2-yasmeen/iot-challenge-1/raw/master/Img/pixart.png)
 # Have Fun!
